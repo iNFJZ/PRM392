@@ -35,7 +35,7 @@ public class Slot51 extends AppCompatActivity {
         //SQLiteDatabase db = sqlite.getReadableDatabase();
         ProductDAO dao = new ProductDAO(this);
 //        Product product = new Product("1", "Asus", 15000, "1");
-        Product product = new Product("2", "Macbook", 20000, "2");
+        Product product = new Product("3", "Dell", 30000, "3");
         int result = dao.insertProduct(product);
         list = dao.getAll();
         adapter = new Adapter(list, this);
