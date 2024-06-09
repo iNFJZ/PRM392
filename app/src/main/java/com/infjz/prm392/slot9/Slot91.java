@@ -26,12 +26,14 @@ public class Slot91 extends AppCompatActivity {
     private ListView LVProduct;
     private Adapter adapter;
     private List<Product> productList;
+    CartManager cartManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_slot91);
         LVProduct = findViewById(R.id.slot91LVProduct);
+        cartManager = CartManager.getInstance();
         productList = new ArrayList<>();
         adapter = new Adapter(this, productList);
         LVProduct.setAdapter(adapter);

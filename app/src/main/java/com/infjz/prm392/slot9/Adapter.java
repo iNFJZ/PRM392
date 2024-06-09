@@ -1,6 +1,7 @@
 package com.infjz.prm392.slot9;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,6 +65,16 @@ public class Adapter extends BaseAdapter {
             holder.TVPrice.setText(product.getPrice());
             holder.TVInfo.setText(product.getInfor());
         }
+        //Event
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Product product = productList.get(position);
+                Intent intent = new Intent(context, Slot101.class);
+                intent.putExtra("PRODUCT", product);
+                context.startActivity(intent);
+            }
+        });
         return convertView;
     }
 
