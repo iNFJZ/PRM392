@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.infjz.prm392.R;
 
@@ -32,8 +29,8 @@ public class Slot11 extends AppCompatActivity {
         EDTName = findViewById(R.id.slot11EDTName);
         EDTPrice = findViewById(R.id.slot11EDTPrice);
         EDTDescription = findViewById(R.id.slot11EDTDescription);
-        TVResult = findViewById(R.id.slot11TVResult);
-        BTNResult = findViewById(R.id.slot11BTNResult);
+        TVResult = findViewById(R.id.slot11TVInsert);
+        BTNResult = findViewById(R.id.slot11BTNInsert);
         BTNResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
