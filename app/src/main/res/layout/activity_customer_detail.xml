@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/edisa"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Customer ID -->
+    <EditText
+        android:id="@+id/edtCustomerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer ID"
+        android:enabled="false"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Customer Name -->
+    <EditText
+        android:id="@+id/edtCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Contact Name -->
+    <EditText
+        android:id="@+id/edtCustomerContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Address -->
+    <EditText
+        android:id="@+id/edtCustomerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- City -->
+    <EditText
+        android:id="@+id/edtCustomerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Postal Code -->
+    <EditText
+        android:id="@+id/edtCustomerPostalCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Postal Code"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Country -->
+    <EditText
+        android:id="@+id/edtCustomerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Phone -->
+    <EditText
+        android:id="@+id/edtCustomerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="5dp" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdateCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:backgroundTint="#6200EE"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDeleteCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="#B00020"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+</LinearLayout>

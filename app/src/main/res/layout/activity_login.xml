@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".slot11.LoginActivity">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/edisa"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/loginEDTUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/imgHeader"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/loginEDTPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/loginEDTUsername"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Save Password CheckBox -->
+    <CheckBox
+        android:id="@+id/loginCBSavePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Password"
+        android:layout_below="@id/loginEDTPassword"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="30dp"/>
+
+    <!-- Login and Forgot Password Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/loginCBSavePass"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/loginBTNLogin"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/loginBTNForgetPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Forgot Password"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -19,14 +19,42 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".slot11.Slot11"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".slot11.ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.ResetCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".slot11.AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.CustomerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".slot11.CustomerListActivity"
+            android:exported="false" /> <!-- <activity android:name=".slot11.ProductActivity" /> -->
+        <activity android:name=".slot11.CustomerActivity" />
+        <activity
+            android:name=".slot11.Slot11"
+            android:exported="true" />
         <activity
             android:name=".slot9.Slot101Cart"
             android:exported="false" />
@@ -35,8 +63,7 @@
             android:exported="false" />
         <activity
             android:name=".slot9.Slot91"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".slot8.Slot83"
             android:exported="true" />

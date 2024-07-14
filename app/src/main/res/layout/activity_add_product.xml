@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".AddProductActivity">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/edisa"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Product Name EditText -->
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:layout_below="@id/imgHeader"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Supplier ID EditText -->
+    <EditText
+        android:id="@+id/editTextSupplierID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Supplier ID"
+        android:layout_below="@id/editTextProductName"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Category ID EditText -->
+    <EditText
+        android:id="@+id/editTextCategoryID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category ID"
+        android:layout_below="@id/editTextSupplierID"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Unit Price EditText -->
+    <EditText
+        android:id="@+id/editTextUnitPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit Price"
+        android:layout_below="@id/editTextCategoryID"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Units In Stock EditText -->
+    <EditText
+        android:id="@+id/editTextUnitsInStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Units In Stock"
+        android:layout_below="@id/editTextUnitPrice"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Add Product Button -->
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:layout_below="@id/editTextUnitsInStock"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6200EE"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>
